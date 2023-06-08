@@ -11,5 +11,6 @@ IFS=' '
 read -a phpvers <<< "$PHP_VERSIONS"
 for ver in "${phpvers[@]}";
 do
-  apt-get install php$ver php$ver-fpm php$ver-mysql libapache2-mod-php$ver libapache2-mod-fcgid -y
+  source ~/.bashrc
+  apt-get install php$ver php$ver-fpm php$ver-mysql php$ver-curl php$ver-gd php$ver-mbstring php$ver-xml php$ver-zip php$ver-imagick libapache2-mod-php$ver libapache2-mod-fcgid -y
 done

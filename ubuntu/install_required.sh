@@ -35,7 +35,11 @@ echo '${GREEN}
 ************************************
 ${NC}
 '
-apt install build-essential software-properties-common nodejs
+apt install build-essential software-properties-common uglifyjs npm composer jpegoptim optipng webp curl zip unzip -y
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install lts/gallium
 
 # install node yarn
 echo "${GREEN}********************"
