@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# console colors
+export NC='\033[0m' # No Color
+export GREEN='\033[0;32m'
+export BLUE='\033[0;34m'
+export RED='\033[0;31m'
+
+# local system variables
+export LOCAL_SYSTEM_USER=dalojikal
+export LOCAL_SYSTEM_GROUP=dalojikal
+export LOCAL_SYSTEM_USER_HOME=/home/$LOCAL_SYSTEM_USER
+
+# set up paths
+export DEV_SCRIPT_PATH=$(pwd) # DO NOT EDIT THIS LINE
+export DEV_PROJECTS_DIR=/mnt/c/dev_projects
+export DEV_HTTP_DIR=$LOCAL_SYSTEM_USER/www
+
+# versions of php to install (seperated by a single space i.e "8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6")
+# avaliable php versions 8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6
+export PHP_VERSIONS="8.2 8.1 7.4"
+
+# DEFAULT_PHP_VERSION sets the default version for php cli and the inital php version for the local dev sites.
+export DEFAULT_PHP_VERSION=8.2
+
+# wordpress installation settings
+export DEV_WP_LOCAL_DOMAIN=local.wpdev.com
+export DEV_WP_INSTALL_PATH=$DEV_HTTP_PATH/$DEV_WP_LOCAL_DOMAIN
+export DEV_WP_DB_USER=wpdev
+export DEV_WP_DB_PASS=!SomePass123@
+export DEV_WP_DB_PREFIX=wpdev_
+export DEV_WP_DB_NAME=wpdev
+export DEV_WP_ADMIN_USER=admin
+export DEV_WP_ADMIN_PASS=!SomePass123@
+export DEV_WP_SITE_TITLE="WP Dev"

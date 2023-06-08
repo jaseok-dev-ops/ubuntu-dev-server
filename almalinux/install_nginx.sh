@@ -3,7 +3,6 @@
 # NGINX Media Server installation script
 # by JASEOK DEV OPS
 
-# Make sure only root can run this script
 # make sure this script is running as root
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"

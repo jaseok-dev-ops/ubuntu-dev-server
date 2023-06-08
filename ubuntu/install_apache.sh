@@ -7,10 +7,8 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # install apache web server
-echo '${GREEN}
-************************************
-*** INSTALLING APACHE WEB SERVER ***
-************************************
-${NC}
-'
+echo "${GREEN}************************************"
+echo "${GREEN}*** INSTALLING APACHE WEB SERVER ***"
+echo "${GREEN}************************************${NC}"
+
 apt install apache2 -y

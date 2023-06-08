@@ -10,5 +10,5 @@ The initial development enviroment installs a default empty php/html site, a Wor
 127.0.0.1   wp.localhost.com
 127.0.0.1   node.localhost.com
 ```
-** NOTES FOR RUNNING THIS DEV ENVIRONMENT ON THE WINDOWS 10/11 UBUNTU LINUX SUB-SYSTEM
-The host file should be edited in Windows as Ubuntu auto-generates the host file from the Windows host file. Restart after editing so Ubuntu can regenerate the host file from Windows.
+** NOTES FOR RUNNING THIS DEV ENVIRONMENT ON THE WINDOWS 10/11 LINUX SUB-SYSTEM
+The host file should be edited in Windows as Ubuntu auto-generates the host file from the Windows host file. Restart the system after editing so Ubuntu can regenerate the host file from Windows.
