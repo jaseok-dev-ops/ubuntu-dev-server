@@ -37,7 +37,7 @@ dnf -y install curl gcc-c++ make composer jpegoptim optipng pngquant gifsicle we
 curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 dnf install -y nodejs
 
-# install node dart-sass
+# install node yarn
 echo "${GREEN}********************"
 echo "${GREEN}*** INSTALL YARN ***"
 echo "${GREEN}********************${NC}"
@@ -77,7 +77,7 @@ echo "${GREEN}*******************************"
 echo "${GREEN}*** INSTALL NODE TYPESCRIPT ***"
 echo "${GREEN}*******************************${NC}"
 
-npm install -g typescript@>=2.8.0
+npm install -g typescript@2.8.0
 
 # install node dir-archiver
 echo "${GREEN}*********************************"

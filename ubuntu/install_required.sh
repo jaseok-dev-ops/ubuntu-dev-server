@@ -35,22 +35,58 @@ echo '${GREEN}
 ************************************
 ${NC}
 '
-apt install build-essential software-properties-common npm node
+apt install build-essential software-properties-common nodejs
+
+# install node yarn
+echo "${GREEN}********************"
+echo "${GREEN}*** INSTALL YARN ***"
+echo "${GREEN}********************${NC}"
+
+npm install -g yarn
 
 # install node dart-sass
-echo '${GREEN}
-******************************
-*** INSTALL NODE DART-SASS ***
-******************************
-${NC}
-'
+echo "${GREEN}******************************"
+echo "${GREEN}*** INSTALL NODE DART-SASS ***"
+echo "${GREEN}******************************${NC}"
+
 npm install -g sass
 
 # install node minify
-echo '${GREEN}
-***************************
-*** INSTALL NODE MINIFY ***
-***************************
-${NC}
-'
+echo "${GREEN}***************************"
+echo "${GREEN}*** INSTALL NODE MINIFY ***"
+echo "${GREEN}***************************${NC}"
+
 npm install -g minify
+
+# install node gulp
+echo "${GREEN}*************************"
+echo "${GREEN}*** INSTALL NODE GULP ***"
+echo "${GREEN}*************************${NC}"
+
+npm install -g gulp gulp-cli
+
+# install node react
+echo "${GREEN}**************************"
+echo "${GREEN}*** INSTALL NODE REACT ***"
+echo "${GREEN}**************************${NC}"
+
+npm install -g react react-dom
+
+# install node typescript
+echo "${GREEN}*******************************"
+echo "${GREEN}*** INSTALL NODE TYPESCRIPT ***"
+echo "${GREEN}*******************************${NC}"
+
+npm install -g typescript@2.8.0
+
+# install node dir-archiver
+echo "${GREEN}*********************************"
+echo "${GREEN}*** INSTALL NODE DIR-ARCHIVER ***"
+echo "${GREEN}*********************************${NC}"
+npm install -g dir-archiver
+
+# install node uglifyjs
+echo "${GREEN}*****************************"
+echo "${GREEN}*** INSTALL NODE UGLIFYJS ***"
+echo "${GREEN}*****************************${NC}"
+npm install -g uglifyjs
