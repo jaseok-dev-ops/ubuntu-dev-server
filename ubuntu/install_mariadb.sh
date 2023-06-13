@@ -7,11 +7,13 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # install mariadb server
-echo '${GREEN}
+echo "${GREEN}
 *********************************
 *** INSTALLING MARIADB SERVER ***
 *********************************
 ${NC}
-'
-apt install mariadb-server
-mysql_secure_installations
+"
+apt install mariadb-server -y
+mysql_secure_installation
+systemctl enable mariadb
+systemctl restart mariadb

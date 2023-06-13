@@ -8,7 +8,6 @@ export RED='\033[0;31m'
 
 # local system variables
 export LOCAL_SYSTEM_USER=dalojikal
-export LOCAL_SYSTEM_GROUP=dalojikal
 export LOCAL_SYSTEM_USER_HOME=/home/$LOCAL_SYSTEM_USER
 
 # set up paths
@@ -18,7 +17,7 @@ export DEV_HTTP_DIR=$LOCAL_SYSTEM_USER/www
 
 # versions of php to install (seperated by a single space i.e "8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6")
 # avaliable php versions 8.2 8.1 8.0 7.4 7.3 7.2 7.1 7.0 5.6
-export PHP_VERSIONS="8.2 8.1 7.4"
+export PHP_VERSIONS="8.2 7.4"
 
 # DEFAULT_PHP_VERSION sets the default version for php cli and the inital php version for the local dev sites.
 export DEFAULT_PHP_VERSION=8.2

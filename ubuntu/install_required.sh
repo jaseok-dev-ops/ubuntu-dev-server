@@ -7,38 +7,38 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # add required repositories
-echo '${GREEN}
+echo "${GREEN}
 ************************************
 *** ADDING REQUIRED REPOSITORIES ***
 ********** ppa:ondrej/php **********
 ************************************
 ${NC}
-'
+"
 add-apt-repository ppa:ondrej/php
 
 # update
-echo '${GREEN}
+echo "${GREEN}
 ***********************
 *** GETTING UPDATES ***
 ***********************
 ${NC}
-'
+"
 apt update -y
 
 # install software
-echo '${GREEN}
+echo "${GREEN}
 ************************************
 *** INSTALLING REQUIRED SOFTWARE ***
 ********** build-essential *********
 **** software-properties-common ****
-************* npm node *************
+*********** npm nvm node ***********
 ************************************
 ${NC}
-'
+"
 apt install build-essential software-properties-common uglifyjs npm composer jpegoptim optipng webp curl zip unzip -y
 
+su $LOCAL_SYSTEM_USER
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-source ~/.bashrc
 nvm install lts/gallium
 
 # install node yarn
@@ -94,3 +94,5 @@ echo "${GREEN}*****************************"
 echo "${GREEN}*** INSTALL NODE UGLIFYJS ***"
 echo "${GREEN}*****************************${NC}"
 npm install -g uglifyjs
+
+exit
